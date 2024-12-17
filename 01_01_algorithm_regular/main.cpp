@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     //二、【正则表达式】
     QRegularExpression re("^1(3|5|8)\\d{9}$");
 
-    if (re.match("11923558899").hasMatch()) {
+    if (re.match("18923558899").hasMatch()) {
         qDebug() << "ok";
     } else {
         qDebug() << "err";

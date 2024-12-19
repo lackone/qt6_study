@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     dock1->setAllowedAreas(Qt::LeftDockWidgetArea | Qt::RightDockWidgetArea);
     dock1->setWindowTitle("停靠1");
     QTextEdit *edit1 = new QTextEdit();
-    edit1->setText("11111111111111111");
+    edit1->setText("1111111111111111111");
     dock1->setWidget(edit1);
     addDockWidget(Qt::RightDockWidgetArea, dock1);
 

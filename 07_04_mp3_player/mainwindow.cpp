@@ -162,7 +162,8 @@ void MainWindow::on_sound_slider_valueChanged(int value)
 {
     qDebug() << value;
 
-    audio->setVolume(value);
+    float volume = static_cast<float>(value) / 100.0f;
+    audio->setVolume(volume);
 }
 
 void MainWindow::on_time_slider_sliderMoved(int position) { player->setPosition(position); }
